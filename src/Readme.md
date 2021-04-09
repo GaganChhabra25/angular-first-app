@@ -45,3 +45,6 @@ platformBrowserDynamic().bootstrapModule(
                 <app-root>Loading....</app-root>
                 </body>
 7. App component got rendered on browser
+
+# Create a New Component
+1. `Decorators` : eg @Component 
