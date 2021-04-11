@@ -48,3 +48,5 @@ platformBrowserDynamic().bootstrapModule(
 
 # Create a New Component
 1. `Decorators` : eg @Component 
+2. Creating new component from CLI : `ng generate component <name>` | `ng g c <name>`
+    - spec file used for testing
