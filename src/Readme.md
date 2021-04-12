@@ -83,3 +83,10 @@ platformBrowserDynamic().bootstrapModule(
 2. Output the username property via String Interpolation (in a paragraph below input)
 3. Add a button which  may only be clicked if username is NOT empty String
 4. Upon clicking the button, the username should be reset to empty string
+
+# Directives 
+1.  A directive is a function that executes whenever the Angular compiler finds it in the DOM.
+2. The * before the attribute selector indicates that a structural directive should be applied instead of a normal attribute directive or property binding
+Eg:
+- `*ngIf` : If true, display element, else not
+    
