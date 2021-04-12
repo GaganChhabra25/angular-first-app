@@ -90,3 +90,5 @@ platformBrowserDynamic().bootstrapModule(
 Eg:
 - `*ngIf` : If true, display element, else not
 - In case else : we need to add or markup a place a `template` defining "No server created" : using <ng-template>
+- `*ngStyle`: Used to style element dynamically
+- `*ngClass` : Used to add or remove css classes
