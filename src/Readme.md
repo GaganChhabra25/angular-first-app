@@ -68,3 +68,12 @@ platformBrowserDynamic().bootstrapModule(
 2. output them beneath each other in AppComponent
 3. Output warning or success message in the components
 4. Style the components appropriately(maybe some red/green text)
+
+# Understanding Databinding 
+1. Binding or communication of data between `Html template <-----> Component`
+2. Component -> Html : 
+    - String interpolation : {{ data }}
+    - Property binding : [property] = "data"
+3. Html -> Component 
+    - Event binding : (event) = "expression"
+4. Combination of both : 2 way binding : 
