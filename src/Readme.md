@@ -89,4 +89,4 @@ platformBrowserDynamic().bootstrapModule(
 2. The * before the attribute selector indicates that a structural directive should be applied instead of a normal attribute directive or property binding
 Eg:
 - `*ngIf` : If true, display element, else not
-    
+- In case else : we need to add or markup a place a `template` defining "No server created" : using <ng-template>

@@ -11,7 +11,10 @@
     class="form-control"
     [(ngModel)]="serverName"
 >
-<p *ngIf="showServerName">Server created successfully : {{serverName}}</p>
+<p *ngIf="showServerName; else noServer">Server created successfully : {{serverName}}</p>
+<ng-template #noServer>
+    <p>No Server created</p>
+</ng-template>
 
 <button 
     class="btn btn-primary" 
