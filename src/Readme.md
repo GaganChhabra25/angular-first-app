@@ -50,3 +50,21 @@ platformBrowserDynamic().bootstrapModule(
 1. `Decorators` : eg @Component 
 2. Creating new component from CLI : `ng generate component <name>` | `ng g c <name>`
     - spec file used for testing
+
+# Fully understanding component selectors
+
+1. # As a attribute :
+
+@Component({
+   selector: '[app-servers]',  : Will act as an attribute. So need to change caller to <div app-servers></div>
+
+2. # As a class:
+
+@Component({
+  selector: '.app-servers', : Will act as class. So need to change caller to  <div class="app-servers"></div>
+
+# Practice Exercise 1
+1. Create 2 new components : WarningAlert And SuccessAlert
+2. output them beneath each other in AppComponent
+3. Output warning or success message in the components
+4. Style the components appropriately(maybe some red/green text)
