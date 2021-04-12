@@ -77,3 +77,9 @@ platformBrowserDynamic().bootstrapModule(
 3. Html -> Component 
     - Event binding : (event) = "expression"
 4. Combination of both : 2 way binding : 
+
+# Practice exercise on DataBinding
+1. Add a input field which updates a property "username" via 2 way binding
+2. Output the username property via String Interpolation (in a paragraph below input)
+3. Add a button which  may only be clicked if username is NOT empty String
+4. Upon clicking the button, the username should be reset to empty string
