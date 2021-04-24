@@ -71,12 +71,15 @@ platformBrowserDynamic().bootstrapModule(
 
 # Understanding Databinding 
 1. Binding or communication of data between `Html template <-----> Component`
-2. Component -> Html : 
+
+2. `Component -> Html` : 
     - String interpolation : {{ data }}
-    - Property binding : [property] = "data"
-3. Html -> Component 
+    - Property binding : Use the `ng-bind directive`, which will bind the innerHTML of the element to the specified model property:
+         Html :  <p ng-bind="firstName"></p> : This will bind to firstName property of component
+
+3. `Html -> Component`
     - Event binding : (event) = "expression"
-4. Combination of both : 2 way binding : 
+4. `Combination of both : 2 way binding` : When data in the model changes, the view reflects the change, and when data in the view changes, the model is updated as well. This happens immediately and automatically, which makes sure that the model and the view is updated at all times. `ng-model directive` provides a two-way binding between the model and the view.
 
 # Practice exercise on DataBinding
 1. Add a input field which updates a property "username" via 2 way binding
@@ -86,9 +89,25 @@ platformBrowserDynamic().bootstrapModule(
 
 # Directives 
 1.  A directive is a function that executes whenever the Angular compiler finds it in the DOM.
-2. The * before the attribute selector indicates that a structural directive should be applied instead of a normal attribute directive or property binding
-Eg:
-- `*ngIf` : If true, display element, else not
-- In case else : we need to add or markup a place a `template` defining "No server created" : using <ng-template>
-- `*ngStyle`: Used to style element dynamically
-- `*ngClass` : Used to add or remove css classes
+2. `Types of directives` :
+    - # Attribute
+    a. Attribute directives `manipulate the DOM by changing its behavior and appearance.`
+    b. We use attribute directives to apply conditional style to elements, show or hide elements or dynamically change the behavior of a component according to a changing property.
+
+    Eg:
+        - `*ngIf` : If true, display element, else not
+        - In case else : we need to add or markup a place a `template` defining "No server created" : using <ng-template>
+        - `*ngStyle`: Used to style element dynamically
+        - `*ngClass` : Used to add or remove css classes
+
+    - # Structural
+    a. These are specifically tailored to `create and destroy DOM elements.`
+
+3. The * before the attribute selector indicates that a structural directive should be applied instead of a normal attribute directive or property binding
+
+# Practice question on Directives
+1. Add a button which says "Display details"
+2. Add a paragraph with any content of your choice (Secret password : secret)
+3. Toggle the displaying of paragraph with the button created in first step
+4. Log all buttonClicks in an array and output that array below the secret paragraph (log date in format `M/d/yyyy HH:mm:ss`)
+5. 

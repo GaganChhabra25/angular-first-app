@@ -1,0 +1,18 @@
+<p>directives works!</p>
+
+<button class="btn-primary"
+    (click)= handleDisplayDetails($event)
+> Display details</button>
+
+<p *ngIf='showDetails'>Secret Password : Tuna</p>
+<table>
+    <thead>
+        <th>time of click</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let time of clicks">
+            <td>{{time | date:'M/d/yyyy HH:mm:ss' }}</td>
+        </tr>
+    </tbody>
+
+</table>
