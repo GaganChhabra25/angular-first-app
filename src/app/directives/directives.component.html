@@ -10,8 +10,8 @@
         <th>time of click</th>
     </thead>
     <tbody>
-        <tr *ngFor="let time of clicks">
-            <td>{{time | date:'M/d/yyyy HH:mm:ss' }}</td>
+        <tr *ngFor="let time of clicks; let i = index">
+            <td [ngStyle]="i > 5 ? {backgroundColor: 'blue'} : ''" [ngClass]="{white: i > 5}">{{time | date:'M/d/yyyy HH:mm:ss' }}</td>
         </tr>
     </tbody>
 
